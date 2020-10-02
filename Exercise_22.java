@@ -6,6 +6,6 @@ public class Exercise_22 {
         int number;
         System.out.println("Input value a: ");
         number = sc.nextInt(); // input value of number;
-        System.out.println("Result of " + number + " + " + (number * 11) + " + " + (number * 111) + " = " + (number + number * 11 +number * 111));
+        System.out.println("Result of " + number + " + " + (number * 11) + " + " + (number * 111) + " = " + (number + number * 11 + number * 111));
     }
 }
