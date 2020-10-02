@@ -8,7 +8,7 @@ public class Exercise_22 {
         number = sc.nextInt(); // input value of number;
         int temp = number;
 
-        for(int i = 1; i <= 4; i++){
+        for(int i = 1; i <= 3; i++){
             if(i == 1){
                 sum = number;
                 continue;
