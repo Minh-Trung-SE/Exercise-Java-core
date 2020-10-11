@@ -6,7 +6,7 @@ public class Exercise_42 {
         int number = sc.nextInt();
         for(int i = 1; i <= number; i++){
             for(int j = 1; j <= (2 * number -1); j++){
-                if(Math.abs(number - j) <= (i - 1)){
+                if(Math.abs(number - j) <= (i - 1)){  /* determines the number of symmetrical elements*/
                     System.out.print(" * ");
                 }else {
                     System.out.print("   ");
