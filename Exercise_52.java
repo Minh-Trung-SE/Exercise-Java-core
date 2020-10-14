@@ -8,23 +8,28 @@ public class Exercise_52 {
         int[] array = new int[element];
 
         //input element of array
-        for(int i = 0; i < element; i++){
+        for (int i = 0; i < element; i++) {
             System.out.print("Array[" + i + "] = ");
             array[i] = sc.nextInt();
         }
         //check and removing element duplicate
-        for(int i = 0; i < (element - 1); i++){
-            if(array[i] == array[i+1]){
-                for(int j = i + 1; j < element; j++){
-                    array[j - 1] = array[j];
+        for(int i = 0; i < (element - 1); i++) {
+            for(int j = i + 1; j < element; j++) {
+                if(array[i] == array[j]){
+                    for(int k = j; k < (element - 1); k++){
+                        array[k] = array[k+1];
+                    }
+                    element--;
                 }
-                element--;
             }
+
         }
         //output array after removing duplicate
         System.out.println("Array after removing duplicate:");
-        for(int j = 0; j < element; j++){
+        for (int j = 0; j < element; j++) {
             System.out.print(array[j] + " ");
         }
+
     }
 }
+
