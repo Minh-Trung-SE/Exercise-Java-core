@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise_52 {
+class Exercise_52 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input number element of array: ");
