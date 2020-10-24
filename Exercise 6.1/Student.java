@@ -1,8 +1,8 @@
-public class Students {
+public class Student {
     private String name;
     private float gpa;
 //constructor
-    public Students(String name, float gpa) {
+    public Student (String name, float gpa) {
         this.name = name;
         this.gpa = gpa;
     }
@@ -40,5 +40,9 @@ public class Students {
         return gpa;
     }
 
-
+    @Override
+    public String toString() {
+        return "Name: " + name +
+                " - Gpa: " + gpa;
+    }
 }
