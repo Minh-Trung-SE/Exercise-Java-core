@@ -45,7 +45,7 @@ public class App_test {
         StoreManagenment storeManagenment = new StoreManagenment(stores); // Có ý nghĩa là gì
         System.out.println(storeManagenment.getMinMaxRevenue(true).getNameStore() + " is store highest revenue");
         System.out.println(storeManagenment.getMinMaxRevenue(false).getNameStore() + " is store lowest revenue");
-        System.out.println(storeManagenment.getMinMaxSold(true).getNameStore() + " is store highest sold");
+        System.out.println(storeManagenment.getMinMaxSold(true).getNameStore()+ " is store highest sold");
         System.out.println(storeManagenment.getMinMaxSold(false).getNameStore() + " is store lowest sold");
     }
 }
