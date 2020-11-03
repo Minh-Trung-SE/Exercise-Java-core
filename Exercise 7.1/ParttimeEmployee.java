@@ -19,4 +19,10 @@ public class ParttimeEmployee extends Employee {
         this.workHourNumber = workHourNumber;
     }
 
+    @Override
+    public String toString() {
+        return "ParttimeEmployee{" +
+                "workHourNumber=" + workHourNumber +
+                '}';
+    }
 }

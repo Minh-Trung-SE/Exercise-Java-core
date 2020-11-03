@@ -2,15 +2,14 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class EmployeeManagement {
-    protected Employee[] employees;
+    private Employee[] employees;
+
 
     public Employee[] inputEmployeeManagement(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input number employee want to add: ");
         int numberEmployee = scanner.nextInt();
-
-        Employee[] employees = new Employee[numberEmployee];
-        for(int i = 0; i < employees.length; i++){
+        for(int i = 0; i < numberEmployee; i++){
             System.out.println("Input name of employee " + (i+1) + " : ");
             scanner.nextLine();
             String nameEmployee = scanner.nextLine();
@@ -42,10 +41,11 @@ public class EmployeeManagement {
         return employees;
     }
 
-    public void printAllEmployee() {
-        for(int i = 0; i < employees.length; i++){
-            System.out.println(employees[i].toString());
-        }
+    @Override
+    public String toString() {
+        return "EmployeeManagement{" +
+                "employees=" + Arrays.toString(employees) +
+                '}';
     }
 
     public Employee[] getEmployees() {
