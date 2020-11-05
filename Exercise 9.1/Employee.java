@@ -1,4 +1,4 @@
-public abstract class Employee {
+public abstract class Employee implements Comparable<Employee>{
     protected String name;
     protected int age;
     protected String indentificationNumber;
@@ -45,5 +45,14 @@ public abstract class Employee {
                 ", age=" + age +
                 ", indentificationNumber='" + indentificationNumber + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        if(this.age >= o.age){
+            return 1;
+        }else {
+            return -1;
+        }
     }
 }

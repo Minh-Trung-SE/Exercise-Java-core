@@ -7,7 +7,9 @@ public class App_test {
         totalEmployee = scanner.nextInt();
         EmployeeManagement employeeManagement = new EmployeeManagement(totalEmployee);
         employeeManagement.displayEmployee();
-        System.out.println("Max salary: \n" + employeeManagement.getMaxSalary(true).toString());
-        System.out.println("Min salary: \n" + employeeManagement.getMaxSalary(false).toString());
+        System.out.println("\n\nThe employee has highest age: ");
+        System.out.println(employeeManagement.getMaxAge().toString());
+        System.out.println("\n\nMax salary: \n" + employeeManagement.getMaxSalary(true).toString());
+        System.out.println("\n\nMin salary: \n" + employeeManagement.getMaxSalary(false).toString());
     }
 }
